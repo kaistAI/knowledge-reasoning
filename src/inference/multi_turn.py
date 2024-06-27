@@ -139,7 +139,7 @@ def main(args):
         inputs = inputs[:5]
 
     # Inference
-    predictions = multiturn_completions(model, inputs, tokenizer, len(questions))
+    predictions = multiturn_completions(model, inputs, tokenizer, len(node_to_q))
 
     # Save results
     results = {}

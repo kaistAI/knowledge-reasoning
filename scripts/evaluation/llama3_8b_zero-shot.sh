@@ -33,4 +33,10 @@ python -m src.evaluation.batch_eval_openai \
 --output_file outputs/evaluation/llama3_8b_zero-shot.json
 
 # ---------------------- 4. Calculate evaluation metrics --------------------- #
-# TODO: @miyoungko
+python -m src.evaluation.metric_calculator \
+--input outputs/evaluation/llama3_8b_zero-shot.json \
+--output_file outputs/evaluation/llama3_8b_zero-shot_metric.json
+
+python metric_calculator.py \
+--input outputs/evaluation/llama3_8b_zero-shot.json \
+--output_file outputs/evaluation/llama3_8b_zero-shot_metric.json

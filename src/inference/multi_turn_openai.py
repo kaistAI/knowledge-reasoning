@@ -166,7 +166,6 @@ async def main(args):
 
     # Load model
     model = OpenAILLM(args.model_name)
-
     nodes = filter_data_dict(nodes, lambda node: node["depth"] > 1)
 
     if DEBUG:
@@ -182,7 +181,7 @@ async def main(args):
         inputs = inputs[:5]
 
     # Inference
-    predictions = await multiturn_completions(model, inputs, len(questions))
+    predictions = await multiturn_completions(model, inputs, len(node_to_q))
 
     # Save results
     results = {}

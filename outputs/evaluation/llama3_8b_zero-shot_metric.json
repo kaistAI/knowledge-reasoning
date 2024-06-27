@@ -1,0 +1,11 @@
+{
+    "Average Accuracy - Depth depth_1": 4.56021409455843,
+    "Average Accuracy - Depth depth_2": 4.451253481894151,
+    "Average Accuracy - Depth depth_3": 4.362637362637362,
+    "Forward Discrepancy - Depth 2 <=> Depth 3": 0.09465020576131687,
+    "Forward Discrepancy - Depth 1 <=> Depth 2": 0.08497327502429543,
+    "Forward Discrepancy - Overall": 0.08682193396226415,
+    "Backward Discrepancy - Depth 2 <=> Depth 3": 0.08855799373040753,
+    "Backward Discrepancy - Depth 1 <=> Depth 2": 0.06630901287553648,
+    "Backward Discrepancy - Overall": 0.07109164420485176
+}
