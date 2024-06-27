@@ -22,3 +22,9 @@ python -m src.inference.single_turn \
 --output_file outputs/inference/llama3_8b_prompt-pred.json \
 --num_gpus $NUM_GPUS \
 --task_type prompt-pred \
+
+python -m src.inference.multi_turn \
+--model_name meta-llama/Meta-Llama-3-8B-Instruct \
+--input kaist-ai/DepthQA \
+--output_file outputs/inference/llama3_8b_multi-turn.json \
+--num_gpus $NUM_GPUS 

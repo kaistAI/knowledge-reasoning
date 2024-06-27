@@ -24,6 +24,15 @@ USER_PROMPT_TEMPLATE_CTX = """
 ###Answer: """
 
 
+USER_PROMPT_TEMPLATE_LAST_TURN = """
+Based on previous questions and responses, answer the given question:
+
+###Question: 
+{question}
+
+###Answer: """
+
+
 # Evaluation
 SYSTEM_PROMPT_EVAL = "You are a fair judge assistant tasked with providing clear, objective feedback based on specific criteria, ensuring each assessment reflects the absolute standards set for performance."
 
