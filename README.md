@@ -1,17 +1,17 @@
 # Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning
 
-This repository is the official implementation of [Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning](). 
+This repository is the official implementation of [Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning](https://arxiv.org/abs/2406.19502). 
 
-- [📃 Paper]()
+- [📃 Paper](https://arxiv.org/abs/2406.19502)
 - [🧵 Brief overview of paper (X thread)]()
 - [🤗 Dataset (DepthQA)](https://huggingface.co/datasets/kaist-ai/DepthQA)
 
 ## TL;DR
 We investigate how large language models utilize knowledge for reasoning to solve complex questions, based on a method that deconstructs complex questions into a hierarchical graph.
 
-> TODO: Add brief explanation of results or insights from the paper
-
-![teaser](assets/teaser.png) ![discrepancies](assets/discrepancies.png)
+Each depth of knowledge required to answer the question represents different levels of complexity. | Some reasoning is required to answer a more complex question compared to a simpler question.
+---- | ----
+![teaser](assets/teaser.png) | ![discrepancies](assets/discrepancies.png)
 
 
 ## Requirements
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## Inference
 
-You can experiment multiple inference modes with DepthQA:
+You can experiment multiple inference modes with our dataset, [DepthQA]((https://huggingface.co/datasets/kaist-ai/DepthQA)):
 
 - Single-turn:
   - `zero-shot`: Only the target question is in the input.
@@ -69,7 +69,6 @@ Following the LLM-as-a-Judge approach, we use `gpt-4-0125-preview` to score the 
     - Average accuracy
     - Forward discrepancy
     - Backward discrepancy
-    - Performance change after providing shallower questions,
 
 where the first three steps are performed in [src/evaluation/batch_eval_openai.py](src/evaluation/batch_eval_openai.py) and the last step is in [src/evaluation/metric_calculator.py](src/evaluation/metric_calculator.py)
 
@@ -83,7 +82,15 @@ bash scripts/evaluation/llama3_8b_prompt-gold_auto.sh
 ```
 
 
-# Citation
+## Citation
 ```bibtex
-
+@misc{ko2024investigatinglargelanguagemodels,
+      title={Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning}, 
+      author={Miyoung Ko and Sue Hyun Park and Joonsuk Park and Minjoon Seo},
+      year={2024},
+      eprint={2406.19502},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.19502}, 
+}
 ```
