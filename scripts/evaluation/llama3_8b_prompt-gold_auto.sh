@@ -9,4 +9,6 @@ python -m src.evaluation.batch_eval_openai \
 --output_file outputs/evaluation/llama3_8b_prompt-gold.json
 
 # ---------------------- 4. Calculate evaluation metrics --------------------- #
-# TODO: @miyoungko
+python -m src.evaluation.metric_calculator \
+--input outputs/evaluation/llama3_8b_prompt-gold.json \
+--output_file outputs/evaluation/llama3_8b_prompt-gold_metric.json
