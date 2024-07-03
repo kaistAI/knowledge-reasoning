@@ -3,7 +3,7 @@
 This repository is the official implementation of [Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning](https://arxiv.org/abs/2406.19502). 
 
 - [📃 Paper](https://arxiv.org/abs/2406.19502)
-- [🧵 Brief overview of paper (X thread)]()
+- [🧵 Brief overview of paper (X thread)](https://x.com/miyoung_ko/status/1807753375196270716)
 - [🤗 Dataset (DepthQA)](https://huggingface.co/datasets/kaist-ai/DepthQA)
 
 ## TL;DR
