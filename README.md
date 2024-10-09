@@ -1,6 +1,6 @@
 # Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning
 
-This repository is the official implementation of [Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning](https://arxiv.org/abs/2406.19502). 
+This repository is the official implementation of [Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization](https://arxiv.org/abs/2406.19502). 
 
 - [📃 Paper](https://arxiv.org/abs/2406.19502)
 - [🧵 Brief overview of paper (X thread)](https://x.com/miyoung_ko/status/1807753375196270716)
@@ -84,8 +84,8 @@ bash scripts/evaluation/llama3_8b_prompt-gold_auto.sh
 
 ## Citation
 ```bibtex
-@misc{ko2024investigatinglargelanguagemodels,
-      title={Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning}, 
+@misc{ko2024hierarchicaldeconstructionllmreasoning,
+      title={Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization}, 
       author={Miyoung Ko and Sue Hyun Park and Joonsuk Park and Minjoon Seo},
       year={2024},
       eprint={2406.19502},
