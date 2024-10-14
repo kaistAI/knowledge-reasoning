@@ -1,4 +1,4 @@
-# Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning
+# Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization
 
 This repository is the official implementation of [Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization](https://arxiv.org/abs/2406.19502). 
 
