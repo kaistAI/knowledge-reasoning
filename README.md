@@ -1,8 +1,8 @@
 # Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization
 
-This repository is the official implementation of [Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization](https://arxiv.org/abs/2406.19502). 
+This repository is the official implementation of [Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization](https://aclanthology.org/2024.emnlp-main.288/). 
 
-- [📃 Paper](https://arxiv.org/abs/2406.19502)
+- [📃 Paper](https://aclanthology.org/2024.emnlp-main.288/)
 - [🧵 Brief overview of paper (X thread)](https://x.com/miyoung_ko/status/1807753375196270716)
 - [🤗 Dataset (DepthQA)](https://huggingface.co/datasets/kaist-ai/DepthQA)
 
@@ -84,13 +84,24 @@ bash scripts/evaluation/llama3_8b_prompt-gold_auto.sh
 
 ## Citation
 ```bibtex
-@misc{ko2024hierarchicaldeconstructionllmreasoning,
-      title={Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization}, 
-      author={Miyoung Ko and Sue Hyun Park and Joonsuk Park and Minjoon Seo},
-      year={2024},
-      eprint={2406.19502},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.19502}, 
+@inproceedings{ko-etal-2024-hierarchical,
+    title = "Hierarchical Deconstruction of {LLM} Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization",
+    author = "Ko, Miyoung  and
+      Park, Sue Hyun  and
+      Park, Joonsuk  and
+      Seo, Minjoon",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.288",
+    doi = "10.18653/v1/2024.emnlp-main.288",
+    pages = "4995--5027",
+    abstract = "Despite the advances in large language models (LLMs), how they use their knowledge for reasoning is not yet well understood.In this study, we propose a method that deconstructs complex real-world questions into a graph, representing each question as a node with predecessors of background knowledge needed to solve the question. We develop the DepthQA dataset, deconstructing questions into three depths: (i) recalling conceptual knowledge, (ii) applying procedural knowledge, and (iii) analyzing strategic knowledge. Based on a hierarchical graph, we quantify forward discrepancy, a discrepancy in LLM performance on simpler sub-problems versus complex questions. We also measure backward discrepancy where LLMs answer complex questions but struggle with simpler ones. Our analysis shows that smaller models exhibit more discrepancies than larger models. Distinct patterns of discrepancies are observed across model capacity and possibility of training data memorization. Additionally, guiding models from simpler to complex questions through multi-turn interactions improves performance across model sizes, highlighting the importance of structured intermediate steps in knowledge reasoning. This work enhances our understanding of LLM reasoning and suggests ways to improve their problem-solving abilities.",
 }
+
 ```
